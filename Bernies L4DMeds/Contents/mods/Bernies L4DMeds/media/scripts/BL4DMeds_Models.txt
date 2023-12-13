@@ -1,0 +1,19 @@
+module BL4DMeds {
+	imports 
+	{
+		Base
+	}
+	
+	model BAdrenaline_Ground
+	{
+		mesh = WorldItems/Pills,
+		texture = WorldItems/BAdrenaline_Ground,
+		scale = 0.4,
+	}
+	model BMedkit_Ground
+	{
+		mesh = WorldItems/FirstAidKit,
+		texture = WorldItems/BMedkit_Ground,
+		scale = 0.3,
+	}
+}

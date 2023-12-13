@@ -1,0 +1,37 @@
+module BL4DMeds {
+	imports 
+	{
+		Base
+	}
+	
+	item BAdrenaline
+	{
+	    DisplayCategory = FirstAid,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseDelta	=	0.1,
+		StressChange    =   10,
+        OnEat = OnEat_BAdrenaline,
+		UseWhileEquipped	=	FALSE,
+		DisplayName	=	Adrenaline,
+		Icon	=	BAdrenaline,
+		StaticModel = BAdrenaline,
+		WorldStaticModel = BAdrenaline_Ground,
+		Medical = TRUE,
+	}
+	
+	item BMedkit
+	{
+		DisplayCategory = FirstAid,
+        CanBandage	=	TRUE,
+        Weight	=	0.05,
+        AlwaysWelcomeGift	=	TRUE,
+        Alcoholic	=	TRUE,
+        Type	=	Normal,
+        DisplayName = Medkit,
+        Icon	=	BMedkit,
+        BandagePower    =   5,
+        WorldStaticModel = BMedkit_Ground,
+	}
+	
+}
